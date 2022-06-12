@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.footer{
+    width:80%;
+    height: 990px;
+    background-color: #000;
+    margin: auto;
+    margin-top: 1.8rem;
+    padding: 0 14px;
+}
+.head{
+    border-bottom: 1px solid #4f4f57;
+    color: #787677;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding: 15px 0 10px;
+    text-transform: uppercase;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-right: -15px;
+    overflow: hidden;
+    list-style-type: none;
+}
+.list>li{
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 25%;
+    color:white;
+}
+li ::before{
+    background: #595959;
+    border-radius: 50%;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 8px;
+}
+.foot{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    border-bottom: 1px solid #4f4f57;
+    border-top: 1px solid #4f4f57;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0
+}
+.title{
+    color: #787677;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.ico{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 4px;
+    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
+}
+.guard{
+    position: relative;
+    border-top: 1px solid #dbdbdb;
+}
+ /* .ico>li{
+   /* margin-top: 50px; */
+/* }  */
+.ico>i{
+    height: 32px;
+    width: 32px;
+    /* margin-top: 7px; */
+    margin-right: 10px;
+    color:#999;
+}
+.linne{
+    position: relative;
+    border-top: 1px solid #dbdbdb;
+    width:195px;
+    margin-top: 10px;
+}
+.main{
+    border-bottom: 1px solid #4f4f57;
+    border-top: 1px solid #4f4f57;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.mete{
+    position: relative;
+    border-top: 1px solid #dbdbdb;
+}
+.mete>ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0;
+    display: block;
+    /* display: flex; */
+    margin: 0 !important;
+    padding: 15px 0;
+}
+/* ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} */
+.express{
+    display: flex;
+    width:450px;
+    height: 250px;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    list-style-type: none;
+}
+.foot{
+    color: #7e828e;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 42px;
+}
+.priva{
+    font-size: 13px;
+    line-height: 17px;
+    font-family: 'Roboto',sans-serif;
+}
+.express1{
+    /* display: flex; */
+    width:250px;
+    height: 250px;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    list-style-type: none;
+}
+.express1>li{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 17px;
+    padding: 5px 10px;
+    width:220px;
+    /* width: 50%; */
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+}
+.express>li{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 17px;
+    padding: 5px 10px;
+    width:220px;
+    /* width: 50%; */
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+}
+.mete>ul>li{
+    font-size: 13px;
+    color: #eee;
+    font-weight: 700;
+    line-height: 17px;
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.mete>ul>li:first-child{
+    opacity: .4;
+    padding-bottom: 10px;
+    max-width: 120px;
+}
+.mete>ul>li:nth-child(2){
+    float: left;
+}
+.mete>ul>li:last-child{
+    padding-left: 30px;
+    width: 199px;
+    /* padding: 0; */
+    opacity: .7;
+}
+.sec{
+    box-sizing: border-box;
+    margin-right: 55px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}

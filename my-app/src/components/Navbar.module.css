@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.container{
+    width:100%;
+    background-color: #efefef;
+    height: 97px;
+    display:flex;
+    justify-content: space-around;
+}
+.lang{
+    width:100%;
+    display:flex ;
+    height: 32px;
+    background-color: #dad8d9;
+    align-items: center;
+}
+.lang>div{
+    margin: auto;
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16px;
+}
+.lang>div>h2{
+    color: #000;
+    font-size: 13px;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    padding-top: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+.logos{
+    width:85px;
+    height:81px;
+}
+.image{
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    text-align: center;
+}
+.navimage{
+    display: block;
+}
+
+.logos>h5{
+    display: block;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.add{
+    width: 150px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #606060;
+    font-family: Roboto,sans-serif;
+    height: 70px;
+    background-color: white;
+}
+.blnav{
+    width:100%;
+    height:50px;
+    background-color: #000;
+}
