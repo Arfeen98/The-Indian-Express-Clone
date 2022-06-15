@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.onlymain{
+    background: #fff;
+    margin: 10px 10px 25px;
+    overflow: hidden;
+    padding: 10px;
+    -moz-box-shadow: 0 0 5px 5px #dfdfdf;
+    -webkit-box-shadow: 0 0 5px 5px #dfdfdf;
+    box-shadow: 0 0 5px 5px #dfdfdf;
+    width:55%;
+    margin-left: 10%;
+}
+.only1{
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 0 0 5px;
+}
+.only1>h2{
+    color: #000;
+    display: inline;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.leftPanel{
+    border-right: 1px solid #dbdbdb;
+    float: left;
+    max-width: 420px;
+    margin: 0 0 20px;
+    overflow: hidden;
+    padding: 0 10px 0 0;
+    width: 67%;
+}
+.leftPanel>img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.leftPanel>h3{
+    font-family: 'Roboto ',sans-serif;
+    line-height: 22px;
+    padding: 0 0 5px;
+    float: none;
+}
+.leftPanel>p{
+    border-bottom: 1px solid #dbdbdb;
+    color: #444;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+}
+.rightPanel{
+    float: left;
+    max-width: 208px;
+    overflow: hidden;
+    padding: 0 0 20px 10px;
+    width: 33%;
+}
+.small{
+    border-bottom: 1px solid #dbdbdb;
+    clear: both;
+    overflow: hidden;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+}
+.small>img{
+    clear: both;
+    overflow: hidden;
+    padding: 0 0 5px;
+}
+.small>h4{
+    line-height: 19px;
+    margin-top: 8px;
+}

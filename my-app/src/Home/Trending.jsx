@@ -1,32 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import { useDispatch,useSelector } from 'react-redux'
-import {getState} from '../Redux/NewsReducer/action'
+import {getTrend} from '../Redux/NewsReducer/action'
 import styled from './state.module.css'
 
-const State = () => {
+const Trending = () => {
   const dispatch=useDispatch();
-  const [country,setCountry]=useState('India')
-  // const data=0;
-  const data=useSelector((state)=>state.news.data2.articles)
+  const data=useSelector((state)=>state.news.data7.articles)
   useEffect(()=>{
-      dispatch(getState(country));
-  },[country]);
-  console.log(data,'4');
-  const handleClick=(e)=>{
-    // console.log(e.target.value);
-    setCountry(e.target.value);
-  }
+      dispatch(getTrend('Media'));
+  },[]);
   return (
     <div>
        <div className={styled.main}>
           <div>
-            <h2>{country}News</h2>
-            <select className={styled.sel} onClick={handleClick}>
-                <option value="INDIA">INDIA</option>
-                <option value="AMERICA">AMERICA</option>
-                <option value="AUSTRALIA">AUSTRALIA</option>
-                <option value="UAE">UAE</option>
-            </select>
+            <h2>Trending</h2>
           </div>
           {data? <div className={styled.flex}>
           <div className={styled.left}>
@@ -51,4 +38,4 @@ const State = () => {
   )
 }
 
-export default State
+export default Trending

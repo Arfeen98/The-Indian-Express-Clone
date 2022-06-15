@@ -1,0 +1,36 @@
+.expmain{
+    background-color: #fff;
+    border: 3px solid #7c8992;
+    margin: 10px 10px 25px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px #dfdfdf;
+    position: relative;
+    width:55%;
+    margin-left:10%;
+}
+.head{
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 12px;
+}
+.head>img{
+    width: 160px;
+}
+.kit{
+    width:45%;
+    overflow: hidden;
+}
+.fle{
+    display: flex;
+    justify-content: space-between;
+    /* gap:20px; */
+}
+.kit>img{
+    border:1px solid black;
+    width: 375px;
+    height: 166px;
+}
+.kit>h1{
+    font-size: 18px;
+    font-weight: bold;
+}

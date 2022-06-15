@@ -1,5 +1,11 @@
 export const NEWS_REQUEST = 'NEWS_REQUEST';
 export const NEWS_SUCCESS = 'NEWS_SUCCESS';
+export const NEWS_SUCCESST = 'NEWS_SUCCESST';
+export const NEWS_SUCCESSM = 'NEWS_SUCCESSM';
+export const NEWS_SUCCESSO = 'NEWS_SUCCESSO';
 export const NEWS_SUCCESSL = 'NEWS_SUCCESSL';
 export const NEWS_SUCCESSS = 'NEWS_SUCCESSS';
+export const NEWS_SUCCESSSP = 'NEWS_SUCCESSSP';
+export const NEWS_SUCCESSE = 'NEWS_SUCCESSE'; 
+export const NEWS_SUCCESSED = 'NEWS_SUCCESSED'; 
 export const NEWS_FAILURE = 'NEWS_FAILURE';
