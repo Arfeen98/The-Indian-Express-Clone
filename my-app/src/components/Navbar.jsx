@@ -1,9 +1,11 @@
 // import { Box } from '@chakra-ui/react'
 import React from 'react'
+import { InitialFocus } from './Modal';
 import styled from './Navbar.module.css'
 const Navbar = () => {
   const current=new Date();
   const date = `${current.getDate()}/${current.getUTCMonth()+1}/${current.getFullYear()}`;
+
   return (
     <>
        <div className={styled.lang}>
@@ -38,6 +40,7 @@ const Navbar = () => {
         <li>Premium</li>
         <li>Sports</li>
         <li>Cities</li>
+        <li style={{color:'white'}}><InitialFocus/></li>
        </ul>
      </div>
      </>
