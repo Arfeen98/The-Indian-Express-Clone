@@ -69,3 +69,18 @@
     height:50px;
     background-color: #000;
 }
+.blnav>ul{
+    position: relative;
+    list-style: none;
+    width:90%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.blnav>ul>li{
+    position: relative;
+    color: white;
+    display: inline-block;
+}

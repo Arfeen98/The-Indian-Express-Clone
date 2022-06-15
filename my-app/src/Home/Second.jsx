@@ -15,9 +15,9 @@ const Second = () => {
     <>
     {data?  <div className={styled.main2}>
       <div className={styled.cont}>
-        <h2>{data[0].title}</h2>
-        <img src={data[0].urlToImage} alt="" />
-        <p>{data[0].description}</p>
+        <h2>{data[1].title}</h2>
+        <img src={data[1].urlToImage} alt="" />
+        <p>{data[1].description}</p>
       </div>
       <div className={styled.left}>
         <h2 className={styled.top}>TOP NEWS STORIES</h2>

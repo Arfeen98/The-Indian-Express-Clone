@@ -3,3 +3,20 @@ body{
     font-family: Roboto,sans-serif;
     line-height: 1;
 }
+.main{
+    display: flex;
+    position: relative;
+}
+.image1{
+    width:210px;
+    height: 600px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
+    /* position: absolute; */
+}
+.image1>img{
+    /* position: sticky; */
+    width: 180px;
+    height: 600px;
+}

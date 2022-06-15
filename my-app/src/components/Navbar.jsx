@@ -1,19 +1,6 @@
 // import { Box } from '@chakra-ui/react'
 import React from 'react'
 import styled from './Navbar.module.css'
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  // RepeatIcon,
-  // ExternalLinkIcon,
-  // AddIcon,
-  // HamburgerIcon,
-  // IconButton,
-  // EditIcon
-} from '@chakra-ui/react'
-
 const Navbar = () => {
   const current=new Date();
   const date = `${current.getDate()}/${current.getUTCMonth()+1}/${current.getFullYear()}`;
@@ -44,28 +31,14 @@ const Navbar = () => {
      </div>
      </div>
      <div className={styled.blnav}>
-     {/* <Menu>
-  <MenuButton
-    as={IconButton}
-    aria-label='Options'
-    icon={<HamburgerIcon />}
-    variant='outline'
-  />
-  <MenuList>
-    <MenuItem icon={<AddIcon />} command='⌘T'>
-      New Tab
-    </MenuItem>
-    <MenuItem icon={<ExternalLinkIcon />} command='⌘N'>
-      New Window
-    </MenuItem>
-    <MenuItem icon={<RepeatIcon />} command='⌘⇧N'>
-      Open Closed Tab
-    </MenuItem>
-    <MenuItem icon={<EditIcon />} command='⌘O'>
-      Open File...
-    </MenuItem>
-  </MenuList>
-</Menu> */}
+       <ul>
+        <li>Home</li>
+        <li>Education</li>
+        <li>Entertainment</li>
+        <li>Premium</li>
+        <li>Sports</li>
+        <li>Cities</li>
+       </ul>
      </div>
      </>
   )
