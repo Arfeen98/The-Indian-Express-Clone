@@ -1,0 +1,30 @@
+#flex_4{
+    display: flex;
+    margin-top: 10px;
+    width:85%;
+    height: 250px;
+    gap:90px;
+    margin: auto;
+}
+.flex_4child{
+    margin-top:15px;
+    width: 258px;
+    height: 253px;
+}
+.flex_4child1{
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    width:125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: #2b3248;
+    align-items: center;
+}
+.flex_4child3>p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 20px 20px;
+}

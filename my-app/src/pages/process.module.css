@@ -1,0 +1,10 @@
+img{
+    margin: auto;
+    width:215px;
+    height: 22px;
+}
+.head{
+    border-bottom: solid 1px #979797;
+    padding: 14px 0 12px 0;
+    text-align: center;
+}

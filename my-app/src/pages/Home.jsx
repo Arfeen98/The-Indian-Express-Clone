@@ -1,17 +1,21 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux/es/exports';
+import React from 'react'
+import First from '../Home/First';
 import AddBox from '../components/AddBox';
-import { getData } from '../Redux/NewsReducer/action';
+import Second from '../Home/Second';
+import Latest from '../Home/Latest';
+import State from '../Home/State';
 
 const Home = () => {
-  const dispatch=useDispatch();
-
-  useEffect(()=>{
-     dispatch(getData());
-  },[])
+ 
   return (
     <div>
       <AddBox/>
+      <First/>
+      <div>
+        <Second/>
+        <Latest/>
+        <State/>
+      </div>
     </div>
   )
 }

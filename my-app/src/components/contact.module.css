@@ -1,0 +1,59 @@
+.sec_head{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.head{
+    text-align: center;
+    /* margin: auto; */
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 990px;
+    box-sizing: border-box;
+}
+.unlist{
+    margin: auto;
+    /* margin: 20px 0 0 0; */
+    /* list-style: none; */
+    margin-top: 20px;
+    padding: 28px 30px;
+    border: 1px solid #dee2e5;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+.li{
+    display: inline-block;
+    position: relative;
+}
+.lii{
+    display: inline-block;
+    position: relative;
+}
+.liii{
+    display: inline-block;
+    position: relative;
+}
+.li>p{
+    display: inline-block;
+    background: url(https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/Contact.svg) no-repeat left top;
+    padding: 4px 0 4px 30px;
+}
+.lii>p{
+    display: inline-block;
+    background: url(https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/Email.svg) no-repeat left top;
+    padding: 4px 0 4px 30px;
+    /* margin-top: 100px; */
+}
+.liii>p{
+    display: inline-block;
+    background: url(https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/Time.svg) no-repeat left top;
+    padding: 4px 0 4px 30px;
+}
