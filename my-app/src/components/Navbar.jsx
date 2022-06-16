@@ -1,6 +1,6 @@
 // import { Box } from '@chakra-ui/react'
 import React,{useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { InitialFocus } from './Modal';
 import styled from './Navbar.module.css'
 const Navbar = () => {
@@ -41,14 +41,17 @@ const Navbar = () => {
      </div>
      <div className={styled.blnav}>
        <ul>
-        <li>Home</li>
+        <li><Link to='/'>Home</Link></li>
         <li>Education</li>
         <li>Entertainment</li>
         <li>Premium</li>
         <li>Sports</li>
         <li>Cities</li>
+        <li className={styled.butn} style={{color:'black'}}><Link to='/subscribe'>Subscribe</Link></li>
+        <li><Link to='/signup'>My Account</Link></li>
         {/* <li onClick={handleClick} style={{color:'white'}}><InitialFocus/></li> */}
-        <li onClick={handleClick} style={{color:'white'}}><i className="fa-solid fa-magnifying-glass"></i></li>
+        {/* <li onClick={handleClick} style={{color:'white'}}><i className="fa-solid fa-magnifying-glass"></i></li> */}
+        <li onClick={handleClick} style={{color:'white'}}>Search</li>
        </ul>
      </div>
      </>

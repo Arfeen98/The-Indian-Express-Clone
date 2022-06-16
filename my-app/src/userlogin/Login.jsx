@@ -107,7 +107,7 @@ export const Login = () => {
         </Box>
         </form>
         <Box textAlign={"center"}>
-      <Text fontSize={"14px"} fontFamily={"Roboto, sans-serif"} color="gray" onClick={()=>navigate("/Signup")}>New customer?Create an account</Text>
+      <Text fontSize={"14px"} fontFamily={"Roboto, sans-serif"} color="gray" onClick={()=>navigate("/Signup")}>New customer?<span style={{color:'blue',cursor:'pointer'}}>Create an account</span></Text>
     </Box>
       </Stack>    
     </Flex>

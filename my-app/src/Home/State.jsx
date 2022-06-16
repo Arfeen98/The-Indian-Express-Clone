@@ -20,7 +20,7 @@ const State = () => {
     <div>
        <div className={styled.main}>
           <div>
-            <h2>{country}News</h2>
+            <h2>{country} News</h2>
             <select className={styled.sel} onClick={handleClick}>
                 <option value="INDIA">INDIA</option>
                 <option value="AMERICA">AMERICA</option>

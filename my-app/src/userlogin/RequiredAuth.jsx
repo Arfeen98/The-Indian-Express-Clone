@@ -1,8 +1,7 @@
-import { useContext } from "react"
+import React,{ useContext } from "react"
 // import { Link} from "react-router-dom"
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../Context/AuthContext";
 import { Login } from "./Login";
-
 
 export const RequiredAuth = ({children})=>{
 const {tokens}=useContext(AuthContext);

@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from '../pages/subscribe.module.css'
+import {useNavigate} from 'react-router-dom'
 const SubscribeCompo = () => {
+  const navigate=useNavigate();
+  const handleClick=()=>{
+     navigate('/payment')
+  }
   return (
     <div>
        <div className={styled.frank}>
@@ -19,7 +24,7 @@ const SubscribeCompo = () => {
             </div>
             <div className={styled.gap}>
             </div>
-            <button className={styled.btn}>Save upto 78%</button>
+            <button onClick={handleClick} className={styled.btn}>Save upto 78%</button>
         </div>
         <div className={styled.wrap_box}>
             <div className={styled.prod} style={{color:'black'}}>Digital Only</div>
@@ -32,7 +37,7 @@ const SubscribeCompo = () => {
             </div>
             <div className={styled.gap}>
             </div>
-            <button className={styled.btn}>Save upto 66%</button>
+            <button onClick={handleClick} className={styled.btn}>Save upto 66%</button>
         </div>
         <div className={styled.wrap_box}>
             <div className={styled.prod} style={{color:'black'}}>ePaper Only</div>
@@ -45,7 +50,7 @@ const SubscribeCompo = () => {
             </div>
             <div className={styled.gap}>
             </div>
-            <button className={styled.btn}>Save upto 66%</button>
+            <button onClick={handleClick} className={styled.btn}>Save upto 66%</button>
         </div>
       </div>
     </div>

@@ -7,6 +7,9 @@ import Navbar from '../components/Navbar';
 import { Login } from '../userlogin/Login';
 import {Signup} from '../userlogin/Signup';
 import Home from '../pages/Home';
+import Subscribe from '../pages/Subscribe';
+import Pay from '../pages/Pay';
+import { RequiredAuth } from '../userlogin/RequiredAuth';
 
 const AllRoutes = () => {
   return (
@@ -19,7 +22,13 @@ const AllRoutes = () => {
          <Route path='/' element={<Home/>}/>
          <Route path='/search' element={<InitialFocus/>}/>
          <Route path='/login' element={<Login />} />
-  <Route path='/SignUp' element={<Signup />} />
+         <Route path='/SignUp' element={<Signup />} />
+         <Route path='/subscribe' element={<Subscribe/>}/>
+         <Route path='/payment' element={
+        <RequiredAuth>
+          <Pay/>
+        </RequiredAuth>
+         }/>
       </Routes>
       </div>
       <div>
