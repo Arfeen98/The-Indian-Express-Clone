@@ -53,7 +53,7 @@ export const newsFailure=()=>({
 export const getData = ()=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:'https://newsapi.org/v2/top-headlines?country=in&apiKey=52ae8144c3f84762bc973f15863ee366',
+        url:'https://newsapi.org/v2/top-headlines?country=in&apiKey=51aa7c0952de4a95a25aa6a41ffdf4a9',
         method:'GET'
     })
     .then((res)=>{
@@ -70,7 +70,7 @@ export const getData = ()=>(dispatch)=>{
 export const getOnly = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8bea7b8dc9f94145b5989dd6f24a547c`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=52ae8144c3f84762bc973f15863ee366`,
          method:'GET',
          params:{
             q
@@ -87,7 +87,7 @@ export const getOnly = (q)=>(dispatch)=>{
 export const getTecho = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8bea7b8dc9f94145b5989dd6f24a547c`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=51aa7c0952de4a95a25aa6a41ffdf4a9`,
          method:'GET',
          params:{
             q
@@ -104,7 +104,7 @@ export const getTecho = (q)=>(dispatch)=>{
 export const getTrend = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8bea7b8dc9f94145b5989dd6f24a547c`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=52ae8144c3f84762bc973f15863ee366`,
          method:'GET',
          params:{
             q
@@ -121,7 +121,7 @@ export const getTrend = (q)=>(dispatch)=>{
 export const getEdu = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8bea7b8dc9f94145b5989dd6f24a547c`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=51aa7c0952de4a95a25aa6a41ffdf4a9`,
          method:'GET',
          params:{
             q
@@ -138,7 +138,7 @@ export const getEdu = (q)=>(dispatch)=>{
 export const getSport = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8bea7b8dc9f94145b5989dd6f24a547c`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=5aee1ae046ed412fbc001c6c31a590aa`,
          method:'GET',
          params:{
             q
@@ -155,7 +155,7 @@ export const getSport = (q)=>(dispatch)=>{
 export const getEnter = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8bea7b8dc9f94145b5989dd6f24a547c`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=5aee1ae046ed412fbc001c6c31a590aa`,
          method:'GET',
          params:{
             q
@@ -172,7 +172,7 @@ export const getEnter = (q)=>(dispatch)=>{
 export const getLatest = ()=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:'https://newsapi.org/v2/everything?q=latest&apiKey=52ae8144c3f84762bc973f15863ee366',
+        url:'https://newsapi.org/v2/everything?q=latest&apiKey=5aee1ae046ed412fbc001c6c31a590aa',
         method:'GET'
     })
     .then((res)=>{
@@ -188,7 +188,7 @@ export const getLatest = ()=>(dispatch)=>{
 export const getState = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/top-headlines?q=${q}&apiKey=52ae8144c3f84762bc973f15863ee366`,
+        url:`https://newsapi.org/v2/top-headlines?q=${q}&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc`,
         method:'GET',
         params:{
             q
@@ -207,7 +207,7 @@ export const getState = (q)=>(dispatch)=>{
 export const getSearch = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/top-headlines?q=${q}&apiKey=52ae8144c3f84762bc973f15863ee366`,
+        url:`https://newsapi.org/v2/top-headlines?q=${q}&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc`,
         method:'GET',
         params:{
             q

@@ -45,7 +45,6 @@ export function InitialFocus() {
           </ModalContent>
         </Modal>
         {handle?<div style={{marginTop:'55%',marginLeft:'-75%',width:'97%',overflow:'hidden',height:'2700px'}}>
-        <h1 onClick={handleCha} style={{marginLeft:'7%',color:'blue',fontSize:'30px'}}>Home</h1>
           <Search search={search}/></div>
         :''}
       </>
