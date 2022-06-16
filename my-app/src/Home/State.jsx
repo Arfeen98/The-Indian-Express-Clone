@@ -11,7 +11,7 @@ const State = () => {
   useEffect(()=>{
       dispatch(getState(country));
   },[country]);
-  console.log(data,'4');
+  // console.log(data,'4');
   const handleClick=(e)=>{
     // console.log(e.target.value);
     setCountry(e.target.value);

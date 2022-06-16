@@ -1,4 +1,4 @@
-import { NEWS_FAILURE, NEWS_REQUEST, NEWS_SUCCESS,NEWS_SUCCESSO,NEWS_SUCCESSS,NEWS_SUCCESSL, NEWS_SUCCESSE, NEWS_SUCCESSSP, NEWS_SUCCESST, NEWS_SUCCESSM, NEWS_SUCCESSED } from "./actionType"
+import { NEWS_FAILURE, NEWS_REQUEST, NEWS_SUCCESS,NEWS_SUCCESSO,NEWS_SUCCESSS,NEWS_SUCCESSL, NEWS_SUCCESSE, NEWS_SUCCESSSP, NEWS_SUCCESST, NEWS_SUCCESSM, NEWS_SUCCESSED, NEWS_SUCCESSEARCH } from "./actionType"
 const initState={
     loading:true,
     data:[],
@@ -10,6 +10,7 @@ const initState={
     data6:[],
     data7:[],
     data8:[],
+    data9:[],
     error:false
 }
 export const NewsReducer = (state=initState,action)=>{
@@ -26,6 +27,14 @@ export const NewsReducer = (state=initState,action)=>{
                 ...state,
                 loading:false,
                 data:action.payload,
+                error:false
+            }
+        }
+        case NEWS_SUCCESSEARCH:{
+            return {
+                ...state,
+                loading:false,
+                data9:action.payload,
                 error:false
             }
         }

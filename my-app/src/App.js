@@ -1,22 +1,9 @@
-// import logo from './logo.svg';
  import './App.css';
-// import Process from './pages/Process';
-import Footer from './components/Footer';
-import { InitialFocus } from './components/Modal';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-// import Subscribe from './pages/Subscribe';
-
+import AllRoutes from './Routes/AllRoutes';
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Home/>
-      <Footer/>
-      {/* <Subscribe/> */}
-      {/* <Process/> */}
-      {/* <Modal/> */}
-      {/* <InitialFocus/> */}
+      <AllRoutes/>
     </div>
   );
 }

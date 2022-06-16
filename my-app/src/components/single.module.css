@@ -1,0 +1,36 @@
+.smain{
+    clear: both;
+    overflow: hidden;
+    display: flex;
+    width:55%;
+    height: inherit;
+    margin-left: 10%;
+    border-bottom: 1px solid #dbdbdb;
+}
+.smaind{
+    clear: both;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.smains{
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    float: left;
+    overflow: hidden;
+    margin: 0 4% 0 0;
+    padding: 3px;
+    position: relative;
+    width: 35%;
+    text-decoration: none;
+    height: inherit;
+}
+.title{
+   line-height: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   padding: 0 0 8px;
+}
+.smain>div>img{
+    width:70%;
+    height:200px;
+}

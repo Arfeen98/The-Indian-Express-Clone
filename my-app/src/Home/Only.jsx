@@ -10,7 +10,7 @@ const Only = () => {
   useEffect(()=>{
         dispatch(getOnly('trending'));
   },[]);
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <div className={styled.onlymain}>

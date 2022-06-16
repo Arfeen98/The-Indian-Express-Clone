@@ -18,12 +18,12 @@ const Home = () => {
   return (
     <>
       <AddBox/>
-      <First/>
         <div className={styled.main}>
         <div className={styled.image1}>
        <img src="https://tpc.googlesyndication.com/simgad/4933651823984287320" width='160px' height='600px' alt="" />
         </div>
       <div style={{width:'50%',marginRight:'30px'}}>
+        <First/>
         <Second/>
         <Latest/>
         <State/>

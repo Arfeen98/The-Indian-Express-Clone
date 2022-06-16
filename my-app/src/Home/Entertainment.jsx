@@ -10,7 +10,7 @@ const Entertainment = () => {
   useEffect(()=>{
         dispatch(getEnter('Entertainment'));
   },[]);
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <div className={styled.onlymain}>

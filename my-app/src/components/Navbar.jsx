@@ -1,10 +1,17 @@
 // import { Box } from '@chakra-ui/react'
-import React from 'react'
+import React,{useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 import { InitialFocus } from './Modal';
 import styled from './Navbar.module.css'
 const Navbar = () => {
+  // const[odd,setOdd]=useState(false);
   const current=new Date();
   const date = `${current.getDate()}/${current.getUTCMonth()+1}/${current.getFullYear()}`;
+  const navigate=useNavigate();
+  const handleClick=()=>{
+      navigate('/search')
+    // setOdd(!odd);
+  }
 
   return (
     <>
@@ -40,7 +47,8 @@ const Navbar = () => {
         <li>Premium</li>
         <li>Sports</li>
         <li>Cities</li>
-        <li style={{color:'white'}}><InitialFocus/></li>
+        {/* <li onClick={handleClick} style={{color:'white'}}><InitialFocus/></li> */}
+        <li onClick={handleClick} style={{color:'white'}}><i className="fa-solid fa-magnifying-glass"></i></li>
        </ul>
      </div>
      </>

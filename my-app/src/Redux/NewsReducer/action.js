@@ -1,5 +1,5 @@
 import axios from "axios";
-import { NEWS_FAILURE,NEWS_SUCCESSE,NEWS_SUCCESS,NEWS_SUCCESSO,NEWS_SUCCESSL,NEWS_SUCCESSS,NEWS_SUCCESSSP, NEWS_REQUEST, NEWS_SUCCESST, NEWS_SUCCESSM, NEWS_SUCCESSED } from "./actionType";
+import { NEWS_FAILURE,NEWS_SUCCESSE,NEWS_SUCCESS,NEWS_SUCCESSO,NEWS_SUCCESSL,NEWS_SUCCESSS,NEWS_SUCCESSSP, NEWS_REQUEST, NEWS_SUCCESST, NEWS_SUCCESSM, NEWS_SUCCESSED, NEWS_SUCCESSEARCH } from "./actionType";
 
 export const newsRequest=()=>({
     type : NEWS_REQUEST
@@ -7,6 +7,10 @@ export const newsRequest=()=>({
 
 export const newsSuccess=(data)=>({
    type : NEWS_SUCCESS,
+   payload:data
+})
+export const newsSuccessearch=(data)=>({
+   type : NEWS_SUCCESSEARCH,
    payload:data
 })
 export const newsSuccessed=(data)=>({
@@ -194,6 +198,23 @@ export const getState = (q)=>(dispatch)=>{
         // console.log(res.data);
         // console.log('3');
         dispatch (newsSuccesss(res.data));
+    })
+    .catch((err)=>{
+        console.log(err);
+        dispatch(newsFailure());
+    })
+}
+export const getSearch = (q)=>(dispatch)=>{
+    dispatch(newsRequest());
+    return axios({
+        url:`https://newsapi.org/v2/top-headlines?q=${q}&apiKey=52ae8144c3f84762bc973f15863ee366`,
+        method:'GET',
+        params:{
+            q
+        }
+    })
+    .then((res)=>{
+        dispatch (newsSuccessearch(res.data));
     })
     .catch((err)=>{
         console.log(err);
