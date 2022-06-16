@@ -1,7 +1,7 @@
 import React from 'react'
 import {Routes,Route} from 'react-router-dom';
 import Footer from '../components/Footer';
-import { InitialFocus } from '../components/Modal';
+// import { InitialFocus } from '../components/Modal';
 import Navbar from '../components/Navbar';
 // import Search from '../components/Search';
 import { Login } from '../userlogin/Login';
@@ -15,6 +15,8 @@ import Educat from '../pages/Educat';
 // import Spo from '../Edutac/Spo';
 import Sports from '../pages/Sports';
 import Ent from '../pages/Ent';
+// import Search from '../Edutac/Search';
+import See from '../pages/See';
 const AllRoutes = () => {
   return (
     <div>
@@ -24,7 +26,7 @@ const AllRoutes = () => {
       <div>
       <Routes>
          <Route path='/' element={<Home/>}/>
-         <Route path='/search' element={<InitialFocus/>}/>
+         <Route path='/search' element={<See/>}/>
          <Route path='/login' element={<Login />} />
          <Route path='/SignUp' element={<Signup />} />
          <Route path='/education' element={<Educat/>}/>

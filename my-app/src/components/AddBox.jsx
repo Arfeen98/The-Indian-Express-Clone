@@ -4,7 +4,7 @@ const AddBox = () => {
   return (
     <>
     <div className={styled.add1}>
-      <img src="https://tpc.googlesyndication.com/daca_images/simgad/17135105900879832363" alt="" />
+     <img src="https://tpc.googlesyndication.com/daca_images/simgad/17135105900879832363" alt="" />
     </div>
     <div className={styled.box1}>
        <div className={styled.rbox}>

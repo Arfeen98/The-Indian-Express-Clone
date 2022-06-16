@@ -13,10 +13,12 @@ import Trending from '../Home/Trending';
 import Education from '../Home/Education';
 import styled from './home.module.css';
 import Addvertise from '../Advertise/Addvertise';
+import { useSelector } from 'react-redux';
 const Home = () => {
- 
+   const loading=useSelector((state)=>state.news.loading);
   return (
     <>
+    {loading ? <div style={{margin:'auto'}}>Loading...</div>:''}
       <AddBox/>
         <First/>
         <div className={styled.main}>

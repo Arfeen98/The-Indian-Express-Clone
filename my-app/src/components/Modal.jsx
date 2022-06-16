@@ -1,25 +1,27 @@
 import React,{useState} from 'react';
 import { useDisclosure } from '@chakra-ui/react';
-import { useDispatch,useSelector } from 'react-redux';
-import { getSearch } from '../Redux/NewsReducer/action';
 import {useNavigate} from 'react-router-dom';
 import { Modal,ModalOverlay,ModalContent,ModalFooter,ModalBody,ModalCloseButton,
     Button,Input,FormControl,} from '@chakra-ui/react'
-import Search from './Search';
+import Search from '../Edutac/Search';
 
 export function InitialFocus() {
     const [search,setSearch]=useState('');
     const { isOpen, onOpen, onClose } = useDisclosure()  
     const initialRef = React.useRef(null)
-    const finalRef = React.useRef(null)
-    const dispatch =useDispatch();
+    const finalRef = React.useRef(null);
+    const [handle,setHandle]=useState(false);
     const navigate=useNavigate();
-    const data=useSelector((state)=>state.news.data9.articles);
+  
 
       const handleClick=()=>{
-      dispatch(getSearch(search));
-      //  navigate('/search')
-      // console.log(data);
+      // dispatch(getSearch(search));
+      setSearch(search);
+      setHandle(true);
+       navigate('/search')
+    }
+    const handleCha=()=>{
+      navigate('/');
     }
     return (
       <>
@@ -42,9 +44,10 @@ export function InitialFocus() {
             </ModalFooter>
           </ModalContent>
         </Modal>
-        {data?.map((item)=>(
-          <Search key={item.id} {...item}/>
-        ))}
+        {handle?<div style={{marginTop:'55%',marginLeft:'-75%',width:'97%',overflow:'hidden',height:'2700px'}}>
+        <h1 onClick={handleCha} style={{marginLeft:'7%',color:'blue',fontSize:'30px'}}>Home</h1>
+          <Search search={search}/></div>
+        :''}
       </>
     )
   }

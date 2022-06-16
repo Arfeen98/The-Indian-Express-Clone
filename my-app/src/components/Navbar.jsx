@@ -1,18 +1,18 @@
 // import { Box } from '@chakra-ui/react'
-import React,{useState} from 'react'
-import { useNavigate,Link } from 'react-router-dom';
+import React from 'react'
+import {Link } from 'react-router-dom';
 import { InitialFocus } from './Modal';
 import styled from './Navbar.module.css'
 const Navbar = () => {
   // const[odd,setOdd]=useState(false);
   const current=new Date();
   const date = `${current.getDate()}/${current.getUTCMonth()+1}/${current.getFullYear()}`;
-  const navigate=useNavigate();
-  const handleClick=()=>{
-      navigate('/search')
-    // setOdd(!odd);
-  }
 
+  // const handleClick=()=>{
+  //     navigate('/search')
+  //   // setOdd(!odd);
+  // }
+  
   return (
     <>
        <div className={styled.lang}>
@@ -32,7 +32,7 @@ const Navbar = () => {
       <i style={{marginLeft:'7px'}} className="fa-brands fa-twitter-square fa-2x"></i>
      </div>
      <div className={styled.image}>
-      <img className={styled.navimage} src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" width='400px' height='40px' alt="" />
+      <Link to='/'><img className={styled.navimage} src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" width='400px' height='40px' alt="" /></Link>
      <div>{date}</div>
      </div>
      <div className={styled.add}>
@@ -49,9 +49,7 @@ const Navbar = () => {
         <li>Cities</li>
         <li className={styled.butn} style={{color:'black'}}><Link to='/subscribe'>Subscribe</Link></li>
         <li><Link to='/signup'>My Account</Link></li>
-        {/* <li onClick={handleClick} style={{color:'white'}}><InitialFocus/></li> */}
-        {/* <li onClick={handleClick} style={{color:'white'}}><i className="fa-solid fa-magnifying-glass"></i></li> */}
-        <li onClick={handleClick} style={{color:'white'}}>Search</li>
+        <li style={{color:'white'}}><InitialFocus/></li>
        </ul>
      </div>
      </>
