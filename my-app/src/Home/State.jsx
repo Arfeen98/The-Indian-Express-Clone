@@ -25,7 +25,9 @@ const State = () => {
                 <option value="INDIA">INDIA</option>
                 <option value="AMERICA">AMERICA</option>
                 <option value="AUSTRALIA">AUSTRALIA</option>
-                <option value="UAE">UAE</option>
+                <option value="Russia">Russia</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="China">China</option>
             </select>
           </div>
           {data? <div className={styled.flex}>

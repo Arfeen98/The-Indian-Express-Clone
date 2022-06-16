@@ -10,7 +10,11 @@ import Home from '../pages/Home';
 import Subscribe from '../pages/Subscribe';
 import Pay from '../pages/Pay';
 import { RequiredAuth } from '../userlogin/RequiredAuth';
-
+// import Edu from '../Edutac/Edu';
+import Educat from '../pages/Educat';
+// import Spo from '../Edutac/Spo';
+import Sports from '../pages/Sports';
+import Ent from '../pages/Ent';
 const AllRoutes = () => {
   return (
     <div>
@@ -23,6 +27,9 @@ const AllRoutes = () => {
          <Route path='/search' element={<InitialFocus/>}/>
          <Route path='/login' element={<Login />} />
          <Route path='/SignUp' element={<Signup />} />
+         <Route path='/education' element={<Educat/>}/>
+         <Route path='/sports' element={<Sports/>}/>
+         <Route path='/entertainment' element={<Ent/>}/>
          <Route path='/subscribe' element={<Subscribe/>}/>
          <Route path='/payment' element={
         <RequiredAuth>

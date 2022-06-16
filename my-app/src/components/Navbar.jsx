@@ -42,10 +42,10 @@ const Navbar = () => {
      <div className={styled.blnav}>
        <ul>
         <li><Link to='/'>Home</Link></li>
-        <li>Education</li>
-        <li>Entertainment</li>
+        <li><Link to='/education'>Education</Link></li>
+        <li><Link to='/entertainment'>Entertainment</Link></li>
         <li>Premium</li>
-        <li>Sports</li>
+        <li><Link to='/sports'>Sports</Link></li>
         <li>Cities</li>
         <li className={styled.butn} style={{color:'black'}}><Link to='/subscribe'>Subscribe</Link></li>
         <li><Link to='/signup'>My Account</Link></li>
