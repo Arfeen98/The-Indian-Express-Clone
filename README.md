@@ -18,28 +18,28 @@ In this project I have tried to clone The Indian Express website, Styling using 
 Snapshots 📷
 •	 page (Home page)
 
- <img src='./Images/Home.png' width='500' height='250'>
- <img src='./Images/Footer.png' width='500' height='250'>
+ <img src='./Images/Home.png' width='800' height='400'>
+ <img src='./Images/Footer.png' width='800' height='400'>
 
 •	Categories Part
 
- <img src='./Images/Technology.png' width='500' height='250'>
- <img src='./Images/Entertainment.png' width='500' height='250'>
+ <img src='./Images/Technology.png' width='800' height='400'>
+ <img src='./Images/Entertainment.png' width='800' height='400'>
 
   
 •	Country Select
 
- <img src='./Images/Select.png' width='500' height='250'>
+ <img src='./Images/Select.png' width='800' height='400'>
   
 •	Search Page
- <img src='./Images/Search.png' width='500' height='250'>
+ <img src='./Images/Search.png' width='800' height='400'>
 
 •	Subscription
- <img src='./Images/Plans.png' width='500' height='250'>
+ <img src='./Images/Plans.png' width='800' height='400'>
   
 •	Signup & Login Page
- <img src='./Images/Signup.png' width='500' height='250'>
- <img src='./Images/Login.png' width='500' height='250'>
+ <img src='./Images/Signup.png' width='800' height='400'>
+ <img src='./Images/Login.png' width='800' height='400'>
 
 # How to run the Project
 ### `npm start`
