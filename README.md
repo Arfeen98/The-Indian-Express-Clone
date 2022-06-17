@@ -1,5 +1,5 @@
 # The-Indian-Express-Clone
-Single project from react-redux
+Single project from react, react-redux
 __________________________
 Project: Make a clone of https://indianexpress.com/
 
