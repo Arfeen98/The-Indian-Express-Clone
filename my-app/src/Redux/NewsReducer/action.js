@@ -53,11 +53,11 @@ export const newsFailure=()=>({
 export const getData = ()=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:'https://newsapi.org/v2/top-headlines?country=in&apiKey=51aa7c0952de4a95a25aa6a41ffdf4a9',
+        url:'https://newsapi.org/v2/top-headlines?country=in&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc',
         method:'GET'
     })
     .then((res)=>{
-        // console.log(res.data);
+        console.log(res.data);
         // console.log('1')
         dispatch (newsSuccess(res.data));
     })
@@ -70,7 +70,7 @@ export const getData = ()=>(dispatch)=>{
 export const getOnly = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=52ae8144c3f84762bc973f15863ee366`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc`,
          method:'GET',
          params:{
             q
@@ -87,7 +87,7 @@ export const getOnly = (q)=>(dispatch)=>{
 export const getTecho = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=51aa7c0952de4a95a25aa6a41ffdf4a9`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc`,
          method:'GET',
          params:{
             q
@@ -104,7 +104,7 @@ export const getTecho = (q)=>(dispatch)=>{
 export const getTrend = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=52ae8144c3f84762bc973f15863ee366`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc`,
          method:'GET',
          params:{
             q
@@ -188,15 +188,15 @@ export const getLatest = ()=>(dispatch)=>{
 export const getState = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/top-headlines?q=${q}&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc`,
+        url:`https://newsapi.org/v2/everything?q=${q}&apiKey=51aa7c0952de4a95a25aa6a41ffdf4a9`,
         method:'GET',
         params:{
             q
         }
     })
     .then((res)=>{
-        // console.log(res.data);
-        // console.log('3');
+         console.log(res.data);
+         console.log('3');
         dispatch (newsSuccesss(res.data));
     })
     .catch((err)=>{
@@ -207,13 +207,14 @@ export const getState = (q)=>(dispatch)=>{
 export const getSearch = (q)=>(dispatch)=>{
     dispatch(newsRequest());
     return axios({
-        url:`https://newsapi.org/v2/top-headlines?q=${q}&apiKey=8dc9567f923f4c84bf8b69e6ee2a89dc`,
+         url:`https://newsapi.org/v2/everything?q=${q}&apiKey=51aa7c0952de4a95a25aa6a41ffdf4a9`,
         method:'GET',
         params:{
             q
         }
     })
     .then((res)=>{
+        console.log(res.data)
         dispatch (newsSuccessearch(res.data));
     })
     .catch((err)=>{
@@ -226,3 +227,5 @@ export const getSearch = (q)=>(dispatch)=>{
 // 52ae8144c3f84762bc973f15863ee366
 // A=51aa7c0952de4a95a25aa6a41ffdf4a9
 // R=5aee1ae046ed412fbc001c6c31a590aa
+
+// OZVvMQqD9oS8x03zNY-6t5f-p-t6tt367NgUzYjaq8s
