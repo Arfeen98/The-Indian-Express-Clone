@@ -32,12 +32,15 @@ Snapshots 📷
  <img src='./Images/Select.png' width='800' height='400'>
   
 •	Search Page
+
  <img src='./Images/Search.png' width='800' height='400'>
 
 •	Subscription
+
  <img src='./Images/Plans.png' width='800' height='400'>
   
 •	Signup & Login Page
+
  <img src='./Images/Signup.png' width='800' height='400'>
  <img src='./Images/Login.png' width='800' height='400'>
 
